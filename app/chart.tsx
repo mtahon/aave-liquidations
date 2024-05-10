@@ -74,6 +74,7 @@ export default function LiquidationChart() {
       <p>{error}</p>
       <Paper sx={{ width: '100%', p: 0, marginTop: 10 }} elevation={0}>
         <ScatterChart
+          sx={{ width: '100%' }}
           series={[
             {
               data: dataSet ? dataSet.map(v => ({
@@ -90,8 +91,8 @@ export default function LiquidationChart() {
           yAxis={[{
             scaleType: 'log'
           }]}
-          width={500}
-          height={300}
+          //width={500}
+          height={500}
           grid={{ vertical: true, horizontal: true }}
           loading={loading}
           
